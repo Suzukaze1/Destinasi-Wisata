@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/et_bg"
+    android:padding="16dp"
+    android:id="@+id/container1H">
+
+    <ImageView
+        android:background="@drawable/loading_shape"
+        android:id="@+id/imgThumbH"
+        android:scaleType="fitXY"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:fontFamily="@font/nexalight"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="#3097D3"
+        android:text="@string/homestay"
+        android:layout_marginStart="26dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:id="@+id/konvensionall"
+        android:layout_toEndOf="@+id/imgThumbH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/nexalight"
+        android:layout_marginTop="5dp"
+        android:textColor="#3097D3"
+        android:layout_below="@+id/konvensionall"
+        android:text="@string/nama_homestay"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/tvHomestayH"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/imgThumbH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:text="@string/deskripsi_homestay"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/imgThumbH"
+        android:layout_below="@id/tvHomestayH"
+        android:id="@+id/tvDeskripsiH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/nexalight"
+        android:textColor="#3097D3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvDeskripsiH"
+        android:text="@string/more"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imgThumbH"
+        android:layout_below="@+id/tvDeskripsiH"
+        android:id="@+id/tvNavigasiiH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/notelpH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/emailH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/alamatH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/llManipulasi003"
+        android:visibility="gone"
+        android:background="#7C829191"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

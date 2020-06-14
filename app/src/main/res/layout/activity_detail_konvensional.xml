@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E3E6"
+    tools:context=".activity.pengguna.konvensional.DetailKonvensionalActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:id="@+id/imgDThumb"
+                android:src="@drawable/homestay"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+            <TextView
+                android:id="@+id/tvNamaDWisata"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/tvKonvensionalDetail"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="-5dp"
+                android:background="#7AE3E8EC"
+                android:text="@string/nama_homestay"
+                android:textSize="25sp" />
+
+            <TextView
+                android:fontFamily="@font/nexalight"
+                android:textColor="#FFFFFF"
+                android:background="#CC1818"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvKonvensionalDetail"
+                android:layout_alignParentBottom="true"
+                android:text="Wisata Konvensional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg_tv_detail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_DDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexalight"
+                android:padding="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_tv_detail">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgTelp001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icontelp_01" />
+
+            <TextView
+                android:textColor="#D94C3A"
+                android:layout_toEndOf="@+id/imgTelp001"
+                android:id="@+id/tv001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nexalight" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgTelp001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgEmail001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mail_01" />
+
+            <TextView
+                android:textColor="#D94C3A"
+                android:layout_toEndOf="@+id/imgTelp001"
+                android:id="@+id/tv002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv001"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nexalight" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgEmail001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgLok001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconlokasi_01_01" />
+
+            <TextView
+                android:textColor="#D94C3A"
+                android:layout_toEndOf="@+id/imgLok001"
+                android:id="@+id/tv003"
+                android:fontFamily="@font/nexalight"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv002"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:drawableEnd="@drawable/panahx1_01"
+                android:textSize="21sp"
+                android:textColor="#ffffff"
+                android:text="@string/navigasi"
+                android:id="@+id/btnDNavigasi"
+                android:fontFamily="@font/nexabold"
+                android:background="#D94C3A"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

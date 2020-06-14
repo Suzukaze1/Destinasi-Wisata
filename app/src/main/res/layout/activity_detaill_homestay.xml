@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E3E6"
+    tools:context=".activity.pengguna.homestay.DetaillHomestayActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:id="@+id/imgDThumbH"
+                android:src="@drawable/homestay"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+
+            <TextView
+                android:fontFamily="@font/nexabold"
+                android:textColor="#ffffff"
+                android:id="@+id/tvNamaDWisataH"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@+id/tvKonvensionalDetail"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:background="#7AE3E8EC"
+                android:text="@string/nama_homestay"
+                android:textSize="25sp" />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:background="#3097D3"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvKonvensionalDetail"
+                android:layout_alignParentBottom="true"
+                android:text="Homestay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg_tv_detail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_DDeskripsiH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg_tv_detail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgTelp001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icontelp_03" />
+
+            <TextView
+                android:textColor="#3097D3"
+                android:layout_toEndOf="@+id/imgTelp001"
+                android:id="@+id/tv001H"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgTelp001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgEmail001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/homestayemail_01" />
+
+            <TextView
+                android:textColor="#3097D3"
+                android:layout_toEndOf="@+id/imgEmail001"
+                android:layout_below="@+id/tv001H"
+                android:id="@+id/tv002H"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgEmail001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgLok001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconlokasi_01_03" />
+
+            <TextView
+                android:textColor="#3097D3"
+                android:layout_toEndOf="@+id/imgLok001"
+                android:id="@+id/tv003H"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tv002H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tel"
+                android:layout_below="@+id/tv003H"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/nexabold"
+                android:id="@+id/btnTelpH"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_ubah"
+                android:drawableEnd="@drawable/pesan"
+                android:text="@string/pesan_sekarang" />
+
+            <Button
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/nexabold"
+                android:drawableEnd="@drawable/panahx1_01"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/btnTelpH"
+                android:text="@string/navigasi"
+                android:id="@+id/btnDNavigasiH"
+                android:background="@drawable/bg_petunjuk"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

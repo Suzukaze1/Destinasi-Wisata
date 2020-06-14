@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E2E3E6"
+    tools:context=".activity.pengguna.konvensional.DetailKonvensionalActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:id="@+id/imgDThumbR"
+                android:src="@drawable/homestay"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"/>
+            <TextView
+                android:fontFamily="@font/nexabold"
+                android:textColor="#ffffff"
+                android:id="@+id/tvNamaDWisataR"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="25sp"
+                android:background="#7AE3E8EC"
+                android:text="@string/nama_homestay"
+                android:layout_width="match_parent"
+                android:layout_alignBottom="@+id/tvKonvensionalDetailR"
+                android:layout_height="120dp"/>
+            <TextView
+                android:textColor="#FFFFFF"
+                android:background="#71A2AB"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/tvKonvensionalDetailR"
+                android:layout_alignParentBottom="true"
+                android:text="Wisata Religi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg_tv_detail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/tv_DDeskripsiR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/bg_tv_detail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgTelp001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icontelp_02" />
+
+            <TextView
+                android:textColor="#71A2AB"
+                android:layout_toEndOf="@+id/imgTelp001"
+                android:id="@+id/tv001R"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgTelp001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgEmail001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/religiemail_01" />
+
+            <TextView
+                android:textColor="#71A2AB"
+                android:layout_toEndOf="@+id/imgEmail001"
+                android:layout_below="@+id/tv001R"
+                android:id="@+id/tv002R"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/imgEmail001"
+                android:layout_marginStart="20dp"
+                android:id="@+id/imgLok001"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconlokasi_01_02" />
+
+            <TextView
+                android:textColor="#71A2AB"
+                android:layout_toEndOf="@+id/imgLok001"
+                android:id="@+id/tv003R"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tv002R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:drawableEnd="@drawable/panahx1_01"
+            android:fontFamily="@font/nexabold"
+            android:textSize="21sp"
+            android:textColor="#ffffff"
+            android:text="@string/navigasi"
+            android:id="@+id/btnDNavigasiR"
+            android:background="#71A2AB"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

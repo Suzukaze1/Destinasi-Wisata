@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.AdminActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/bg_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnLogout"
+                android:textColor="#3597d3"
+                android:background="@drawable/btn_bg_login"
+                android:text="@string/logout"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="40dp"
+                android:id="@+id/img1"
+                android:layout_below="@+id/btnLogout"
+                android:src="@drawable/revert_01"
+                android:layout_width="100dp"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:fontFamily="@font/nexalight"
+                android:textColor="#ffffff"
+                android:id="@+id/tvSelamat"
+                android:layout_marginStart="15dp"
+                android:text="@string/selamat_datang_di_aplikasi"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/btnLogout"
+                android:layout_toEndOf="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/nexabold"
+                android:textColor="#ffffff"
+                android:id="@+id/tvDinas"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginStart="15dp"
+                android:text="@string/informasi_pariwisata"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/img1"
+                android:layout_below="@+id/tvSelamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="25sp"
+                android:fontFamily="@font/nexabold"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:text="@string/kota_pekanbaru"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/img1"
+                android:layout_below="@+id/tvDinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/nexalight"
+                android:id="@+id/tv1"
+                android:textColor="#3597d3"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:text="@string/silahkan_pilih_data_yang_ingin_dirubah"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/tv1"
+                android:layout_width="270dp"
+                android:layout_height="1dp"
+                android:background="#B4B4B4"/>
+
+            <LinearLayout
+                android:id="@+id/llGrid"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:background="#ffffff"
+                    android:layout_marginTop="30dp"
+                    android:columnCount="2"
+                    android:rowCount="4"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="6dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llAdminWisata"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/wisata01"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Wisata"
+                                android:fontFamily="@font/nexabold"
+                                android:textColor="#3097D3"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="6dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llHomestayAdmin"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/hs"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"/>
+
+                            <TextView
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/nexabold"
+                                android:textColor="#3097D3"
+                                android:textSize="18sp"
+                                android:text="Homestay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="6dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llRestoranAdmin"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/restouran001"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"/>
+
+                            <TextView
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/nexabold"
+                                android:textColor="#3097D3"
+                                android:textSize="18sp"
+                                android:text="Restoran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        app:cardElevation="6dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llLogout"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/logout01"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"/>
+
+                            <TextView
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/nexabold"
+                                android:textColor="#3097D3"
+                                android:textSize="18sp"
+                                android:text="@string/keluar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/nexalight"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/llGrid"
+                android:id="@+id/tvSelamatD"
+                android:textColor="#3097D3"
+                android:text="@string/selamat_datang_dipekanbaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

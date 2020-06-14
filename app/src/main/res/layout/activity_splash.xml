@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3597d3"
+    android:layout_height="match_parent"
+    tools:context=".activity.pengguna.SplashActivity">
+
+    <ImageView
+        android:layout_marginTop="220dp"
+        android:src="@drawable/logo002"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:fontFamily="@font/nexalight"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:text="@string/copyright_pariwisata_2019"
+        android:textAlignment="center"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

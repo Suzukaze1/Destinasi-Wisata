@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/et_bg"
+    android:padding="16dp"
+    android:id="@+id/container1HA">
+
+    <ImageView
+        android:background="@drawable/loading_shape"
+        android:id="@+id/imgThumb02"
+        android:scaleType="fitXY"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:fontFamily="nexalight"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="#3097D3"
+        android:text="@string/homestay"
+        android:layout_marginStart="26dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:id="@+id/konvensionall"
+        android:layout_toEndOf="@+id/imgThumb02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/nexabold"
+        android:layout_marginTop="5dp"
+        android:textColor="#3097D3"
+        android:layout_below="@+id/konvensionall"
+        android:text="@string/nama_homestay"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/tvHomestay02"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/imgThumb02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:text="@string/deskripsi_homestay"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@id/imgThumb02"
+        android:layout_below="@id/tvHomestay02"
+        android:id="@+id/tvDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/bg_ubah"
+        android:id="@+id/btnEdit03"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tvHomestay02"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/imgThumb02"
+        android:text="@string/ubah" />
+
+    <Button
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:background="@drawable/bg_non"
+        android:id="@+id/btnNonAktif03"
+        android:text="@string/nonaktifkan"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/btnEdit03"
+        android:layout_below="@id/tvHomestay02"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="#D84416"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tvDeskripsi"
+        android:text="@string/more"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imgThumb02"
+        android:layout_below="@+id/tvDeskripsi"
+        android:id="@+id/tvNavigasii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/notelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/imgThumb02"
+        android:visibility="visible"
+        android:id="@+id/tvIDKE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/imgThumb02"
+        android:id="@+id/tvNon1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nexabold"
+        android:id="@+id/aktifkan"
+        android:visibility="gone"
+        android:layout_marginStart="190dp"
+        android:layout_below="@+id/tvHomestay02"
+        android:background="@drawable/bg_non"
+        android:text="Aktifkan"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/llManipulasi004"
+        android:visibility="gone"
+        android:background="#7C829191"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

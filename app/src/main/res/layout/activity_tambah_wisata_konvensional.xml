@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.admin.konvensional.TambahWisataKonvensionalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvidnonK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/nama_wisata"
+                android:id="@+id/etNamaWisataK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="@string/masukan_gambar_berupa_alamat"
+                android:layout_below="@+id/etNamaWisataK"
+                android:id="@+id/etGambarWisataK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvContoh"
+                android:textColor="#F44336"
+                android:text="@string/gambar_harus_berupa_alamat_contoh"
+                android:layout_below="@+id/etGambarWisataK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivContoh"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/contoh"
+                android:layout_below="@+id/tvContoh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/ivContoh"
+                android:id="@+id/etDeskripsiK"
+                android:hint="@string/deskripsi_wisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="@string/alamat_wisata"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/etDeskripsiK"
+                android:id="@+id/etAlamatK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="@string/nomor_telefon"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/etAlamatK"
+                android:id="@+id/etNotelpK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:hint="@string/koordinat_googlemaps"
+                android:layout_below="@id/etNotelpK"
+                android:id="@+id/etGoogleMapsK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvContoh2"
+                android:textColor="#F44336"
+                android:layout_below="@+id/etGoogleMapsK"
+                android:text="@string/contoh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/contoh2"
+                android:layout_below="@+id/tvContoh2"
+                android:id="@+id/ivContoh2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/tvKoodinat"
+                android:textColor="#F44336"
+                android:text="@string/help_koordinat"
+                android:layout_below="@+id/ivContoh2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/tvKoodinat"
+                android:id="@+id/etEmailK"
+                android:hint="@string/email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnKirimK"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/etEmailK"
+                android:text="@string/simpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

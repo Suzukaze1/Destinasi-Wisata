@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.pengguna.misc.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="555dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/bg_dashboard">
+
+                <ImageView
+                    android:id="@+id/ivBalek"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/ivBalek"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/logo002" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="8dp"
+                android:layout_width="330dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="320dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tilUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp">
+
+                        <EditText
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:id="@+id/etUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_person_black_24dp"
+                            android:fontFamily="@font/nexalight"
+                            android:hint="@string/masukan_username" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                            android:fontFamily="@font/nexalight"
+                            android:hint="@string/masukan_password"
+                            android:inputType="textPassword" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:layout_marginEnd="20dp"
+                        android:id="@+id/btnLogin"
+                        android:layout_gravity="end"
+                        android:layout_width="120dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/tv_bg2"
+                        android:fontFamily="@font/nexalight"
+                        android:text="@string/masuk"
+                        android:textColor="#ffffff"  />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="323dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/nexalight"
+                android:text="@string/copyright_pariwisata_2019"
+                android:textAlignment="center"
+                android:textColor="#3597d3" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alvinmd.androidrplbo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.admin.restoran.AktifkanRestoranActivity"></activity>
+        <activity android:name=".activity.admin.religi.AktifkanReligiActivity" />
+        <activity android:name=".activity.admin.homestay.AktifkanHomestayActivity" />
+        <activity android:name=".activity.admin.konvensional.AktifkanKonvensionalActivity" />
+        <activity android:name=".activity.admin.restoran.NonAktifRestoranActivity" />
+        <activity
+            android:name=".activity.admin.restoran.RestoranAdminActivity"
+            android:label="Daftar Restoran di Kota Pekanbaru"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".activity.admin.restoran.UbahRestoranActivity" />
+        <activity android:name=".activity.admin.restoran.TambahRestoranActivity" />
+        <activity android:name=".activity.admin.homestay.NonAktifHomestay" />
+        <activity android:name=".activity.admin.homestay.UbahHomestayActivity" />
+        <activity android:name=".activity.admin.homestay.TambahHomestayActivity" />
+        <activity
+            android:name=".activity.admin.homestay.HomestayAdminActivity"
+            android:label="Daftar Homestay Kota Pekanbaru"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".activity.admin.religi.NonAktifReligiActivity" />
+        <activity android:name=".activity.admin.religi.UbahReligiActivity" />
+        <activity android:name=".activity.admin.konvensional.NonAktifKonvensionalActivity" />
+        <activity android:name=".activity.pengguna.restoran.DetailRestoranActivity" />
+        <activity
+            android:name=".activity.pengguna.restoran.RestoranActivity"
+            android:label="Daftar Restoran di Kota Pekanbaru"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".activity.admin.konvensional.UbahKonvensionalActivity" />
+        <activity android:name=".activity.pengguna.homestay.DetaillHomestayActivity" />
+        <activity android:name=".activity.admin.religi.TambahWisataReligiActivity" />
+        <activity
+            android:name=".activity.admin.religi.ReligiAdminActivity"
+            android:label="Daftar Tempat Wisata Kota Pekanbaru"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activity.pengguna.religi.DetailReligiActivity" />
+        <activity
+            android:name=".activity.pengguna.religi.ReligiActivity"
+            android:label="Daftar Tempat Wisata Kota Pekanbaru"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activity.admin.konvensional.KonvensionalAdminActivity"
+            android:label="Daftar Tempat Wisata Kota Pekanbaru"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".activity.admin.misc.TempatWisataAdminActivity" />
+        <activity android:name=".activity.admin.konvensional.TambahWisataKonvensionalActivity" />
+        <activity android:name=".activity.pengguna.konvensional.DetailKonvensionalActivity" />
+        <activity android:name=".activity.pengguna.misc.AboutActivity" />
+        <activity
+            android:name=".activity.pengguna.konvensional.KonvensionalActivity"
+            android:label="Daftar Tempat Wisata Kota Pekanbaru"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".activity.pengguna.misc.TempatWisataActivity" />
+        <activity android:name=".activity.admin.AdminActivity" />
+        <activity android:name=".activity.admin.misc.RegisterActivity" />
+        <activity android:name=".activity.pengguna.MainActivity" />
+        <activity
+            android:name=".activity.pengguna.homestay.HomestayActivity"
+            android:label="Daftar Homestay Kota Pekanbaru"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".activity.pengguna.misc.LoginActivity" />
+        <activity android:name=".activity.pengguna.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
